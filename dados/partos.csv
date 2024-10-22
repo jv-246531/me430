@@ -1,0 +1,451 @@
+"Regiao de Saude (CIR)";"Vaginal";"Cesario";"Ignorado";"Total"
+"12001 Alto Acre";555;471;NA;1026
+"12002 Baixo Acre e Purus";4235;4939;1;9175
+"12003 Juru? e Tarauac?/Envira";2805;2228;8;5041
+"27001 1? Regiao de Sa?de";8125;12733;NA;20858
+"27002 2? Regiao de Sa?de";1418;538;3;1959
+"27003 3? Regiao de Sa?de";1163;669;1;1833
+"27004 4? Regiao de Sa?de";477;NA;NA;477
+"27005 5? Regiao de Sa?de";1185;997;NA;2182
+"27006 6? Regiao de Sa?de";1000;1346;NA;2346
+"27007 7? Regiao de Sa?de";3125;5338;4;8467
+"27008 8? Regiao de Sa?de";820;1368;NA;2188
+"27009 9? Regiao de Sa?de";1987;2309;NA;4296
+"27010 10? Regiao de Sa?de";1150;811;NA;1961
+"13001 Manaus, Entorno e Alto Rio Negro";20555;20220;NA;40775
+"13002 Rio Negro e Solim?es";2921;1955;NA;4876
+"13003 Rio Madeira";1722;1149;NA;2871
+"13004 M?dio Amazonas";1844;888;NA;2732
+"13005 Baixo Amazonas";2843;1620;NA;4463
+"13006 Regional Purus";1295;956;NA;2251
+"13007 Regional Juru?";1450;821;NA;2271
+"13008 Tri?ngulo";2281;897;NA;3178
+"13009 Alto Solim?es";4984;1424;NA;6408
+"16001 ?rea Central";5913;4680;7;10600
+"16002 ?rea Norte";600;183;1;784
+"16003 ?rea Sudoeste";1909;1209;NA;3118
+"29001 Alagoinhas";2681;1112;4;3797
+"29002 Barreiras";3769;4068;10;7847
+"29003 Brumado";1581;2467;10;4058
+"29004 Cama?ari";3683;2471;2;6156
+"29005 Cruz das Almas";1028;1172;2;2202
+"29006 Feira de Santana";6445;9049;13;15507
+"29007 Guanambi";2329;2828;16;5173
+"29008 Ibotirama";1359;767;5;2131
+"29009 Ilh?us";2368;1398;6;3772
+"29010 Irec?";2802;2449;1;5252
+"29011 Itaberaba";1313;1197;5;2515
+"29012 Itabuna";3083;2188;NA;5271
+"29013 Itapetinga";1120;465;2;1587
+"29014 Jacobina";1933;1290;4;3227
+"29015 Jequi?";2669;3176;11;5856
+"29016 Juazeiro";4145;2531;4;6680
+"29017 Paulo Afonso";1239;1389;2;2630
+"29018 Porto Seguro";3512;2257;NA;5769
+"29019 Ribeira do Pombal";1598;1588;4;3190
+"29020 Salvador";16814;19249;35;36098
+"29021 Santa Maria da Vit?ria";1968;2185;4;4157
+"29022 Santo Ant?nio de Jesus";1543;2610;5;4158
+"29023 Seabra";1096;1355;5;2456
+"29024 Senhor do Bonfim";1887;1627;NA;3514
+"29025 Serrinha";2494;3023;8;5525
+"29026 Teixeira de Freitas";2985;2987;5;5977
+"29027 Valen?a";1639;971;2;2612
+"29028 Vit?ria da Conquista";4871;4747;1;9619
+"23001 1? RS FORTALEZA";19922;39557;53;59532
+"23011 5? RS SOBRAL";8470;13033;14;21517
+"23023 2? RS Cariri";4547;14204;4;18755
+"23024 3? RS Sert?o Central";2540;4704;1;7245
+"23025 4? RS Litoral Leste/Jaguaribe";1338;3018;NA;4356
+"53001 Distrito Federal";21180;26844;3;48027
+"32002 Metropolitana";12523;17816;16;30355
+"32004 Sul";2664;5729;2;8395
+"32005 Central Norte";5098;7993;2;13093
+"52001 Central";11198;25146;NA;36344
+"52002 Centro Sul";1709;2824;NA;4533
+"52003 Entorno Norte";1034;1584;NA;2618
+"52004 Entorno Sul";1150;1270;NA;2420
+"52005 Estrada de Ferro";722;2744;NA;3466
+"52006 Nordeste I";259;346;1;606
+"52007 Nordeste II";410;636;1;1047
+"52008 Norte";312;1144;2;1458
+"52009 Oeste I";116;977;NA;1093
+"52010 Oeste II";158;851;NA;1009
+"52011 Pirineus";2216;4812;NA;7028
+"52012 Rio Vermelho";269;1269;1;1539
+"52013 S?o Patr?cio I";410;1512;NA;1922
+"52014 Serra da Mesa";578;1378;NA;1956
+"52015 Sudoeste I";1338;4370;NA;5708
+"52016 Sudoeste II";573;2414;NA;2987
+"52017 Sul";528;2157;NA;2685
+"52018 S?o Patr?cio II";223;1346;NA;1569
+"21001 A?ail?ndia";1717;1471;2;3190
+"21002 Bacabal";588;2562;5;3155
+"21003 Balsas";1399;2232;NA;3631
+"21004 Barra do Corda";1857;2397;3;4257
+"21005 Caxias";2059;1969;1;4029
+"21006 Chapadinha";1717;2435;6;4158
+"21007 Cod?";2203;3194;5;5402
+"21008 Imperatriz";4363;5593;4;9960
+"21009 Itapecuru Mirim";1763;2394;5;4162
+"21010 Pedreiras";772;1663;4;2439
+"21011 Pinheiro";2977;1817;22;4816
+"21012 Presidente Dutra";688;2152;5;2845
+"21013 Ros?rio";1904;1133;3;3040
+"21014 Santa In?s";1867;3207;1;5075
+"21015 S?o Jo?o dos Patos";1319;1812;8;3139
+"21016 S?o Lu?s";8144;13861;12;22017
+"21017 Timon";1591;1449;1;3041
+"21018 Viana";1657;1147;2;2806
+"21019 Z? Doca";2119;1772;17;3908
+"31001 Alfenas/Machado";1083;2063;4;3150
+"31002 Guaxup?";164;1224;NA;1388
+"31003 Itajub?";859;1229;NA;2088
+"31004 Lavras";675;1470;NA;2145
+"31006 Po?os de Caldas";827;1675;2;2504
+"31007 Pouso Alegre";1987;4280;9;6276
+"31008 S?o Louren?o";649;1925;NA;2574
+"31009 S?o Sebasti?o do Para?so";615;783;NA;1398
+"31010 Tr?s Cora??es";498;774;NA;1272
+"31011 Tr?s Pontas";408;965;NA;1373
+"31012 Varginha";646;1862;NA;2508
+"31013 Barbacena";780;1574;5;2359
+"31015 S?o Jo?o Del Rei";576;1277;9;1862
+"31016 Belo Horizonte/Nova Lima/Santa Luzia";23831;21763;4;45598
+"31017 Betim";4672;4287;9;8968
+"31018 Contagem";3377;1676;3;5056
+"31019 Curvelo";571;1232;NA;1803
+"31020 Guanh?es";423;339;1;763
+"31021 Itabira";867;1362;4;2233
+"31022 Ouro Preto";741;1294;2;2037
+"31023 Jo?o Monlevade";524;777;10;1311
+"31024 Sete Lagoas";1903;2466;NA;4369
+"31025 Vespasiano/Lagoa Santa";226;708;NA;934
+"31026 Diamantina/Itamarandiba";975;782;4;1761
+"31027 Turmalina/Minas Novas/Capelinha";718;547;1;1266
+"31028 Bom Despacho";428;617;1;1046
+"31030 Formiga";359;649;1;1009
+"31031 Ita?na";385;653;1;1039
+"31032 Par? de Minas/Nova Serrana";1287;1551;1;2839
+"31034 Caratinga";758;1583;NA;2341
+"31035 Coronel Fabriciano/Tim?teo";378;1074;2;1454
+"31036 Governador Valadares";2223;2969;2;5194
+"31037 Ipatinga";2906;3015;NA;5921
+"31038 Mantena";80;564;4;648
+"31040 Resplendor";217;722;1;940
+"31041 Al?m Para?ba";145;313;NA;458
+"31042 Carangola";426;1489;NA;1915
+"31044 Leopoldina/Cataguases";277;1155;NA;1432
+"31045 Muria?";540;1292;NA;1832
+"31046 Santos Dumont";102;226;NA;328
+"31047 S?o Jo?o Nepomuceno/Bicas";47;105;3;155
+"31048 Ub?";695;2507;NA;3202
+"31050 Cora??o de Jesus";151;63;NA;214
+"31051 Francisco S?";43;30;NA;73
+"31052 Jana?ba/Monte Azul";1648;1795;3;3446
+"31053 Janu?ria";703;446;NA;1149
+"31055 Pirapora";748;1128;NA;1876
+"31057 Patos de Minas";1111;2353;1;3465
+"31058 Una?/Paracatu";977;2292;2;3271
+"31059 Manhua?u";1542;3437;2;4981
+"31060 Ponte Nova";683;1441;NA;2124
+"31061 Vi?osa";538;954;NA;1492
+"31062 ?guas Formosas";343;185;NA;528
+"31064 Ara?ua?";457;305;3;765
+"31065 Itaobim";427;400;NA;827
+"31066 Nanuque";234;440;2;676
+"31067 Padre Para?so";167;84;1;252
+"31068 Pedra azul";245;205;NA;450
+"31070 Arax?";576;1450;NA;2026
+"31071 Frutal/Iturama";250;1194;2;1446
+"31072 Uberaba";1817;3358;2;5177
+"31073 Ituiutaba";359;1193;2;1554
+"31074 Patroc?nio/Monte Carmelo";572;1742;NA;2314
+"31075 Uberl?ndia/Araguari";3427;7907;2;11336
+"31076 Manga";319;350;NA;669
+"31077 Jo?o Pinheiro";158;503;NA;661
+"31078 Congonhas";302;1170;NA;1472
+"31079 Conselheiro Lafaiete";297;1128;5;1430
+"31082 S?o Gotardo";325;778;NA;1103
+"31083 Bocai?va";264;226;2;492
+"31084 Montes Claros";4104;3934;1;8039
+"31085 Taiobeiras";844;918;NA;1762
+"31086 Divin?polis";1712;2783;NA;4495
+"31087 Lagoa da Prata/Santo Ant?nio do Monte";144;1258;1;1403
+"31088 Oliveira/Santo Ant?nio do Amparo";307;729;NA;1036
+"31089 Campo Belo";173;681;NA;854
+"31090 Lima Duarte";51;126;NA;177
+"31091 C?ssia";132;259;1;392
+"31092 Passos";1170;1460;NA;2630
+"31093 Piumhi";132;513;NA;645
+"31094 Almenara/Jacinto";915;492;12;1419
+"31095 Serro";390;278;2;670
+"31096 Itambacuri";83;202;8;293
+"31097 Juiz de Fora";2884;4427;NA;7311
+"31098 Salinas";297;353;NA;650
+"31099 Te?filo Otoni/Malacacheta";1877;2136;3;4016
+"31100 S?o Francisco";468;418;NA;886
+"31101 Bras?lia de Minas";637;591;1;1229
+"31102 Pe?anha/S?o Jo?o Evangelista/Santa Maria do";297;628;2;927
+"50001 Campo Grande";6890;14064;1;20955
+"50002 Corumb?";440;1531;NA;1971
+"50003 Dourados";5294;7805;1;13100
+"50004 Tr?s Lagoas";861;3047;2;3910
+"51001 Alto Tapaj?s";396;1163;NA;1559
+"51002 Baixada Cuiabana";7534;8916;17;16467
+"51003 Araguaia Xingu";468;977;NA;1445
+"51004 Centro Norte";257;532;NA;789
+"51005 Gar?as Araguaia";683;1414;2;2099
+"51006 M?dio Araguaia";714;1515;NA;2229
+"51007 M?dio Norte Matogrossense";831;3420;NA;4251
+"51008 Noroeste Matogrossense";422;1738;NA;2160
+"51009 Norte Araguaia Karaj?";129;158;1;288
+"51010 Norte Matogrossense";215;1405;1;1621
+"51011 Oeste Matogrossense";677;1920;2;2599
+"51012 Sudoeste Matogrossense";467;1104;NA;1571
+"51013 Sul Matogrossense";3097;5603;3;8703
+"51014 Teles Pires";3738;6355;6;10099
+"51015 Vale do Peixoto";487;1138;1;1626
+"51016 Vale dos Arinos";311;592;NA;903
+"15001 Araguaia";2016;5260;2;7278
+"15002 Baixo Amazonas";8860;5820;11;14691
+"15003 Caraj?s";6460;8378;8;14846
+"15004 Lago de Tucuru?";2336;3798;4;6138
+"15006 Metropolitana I";10290;21588;15;31893
+"15007 Metropolitana II";1544;715;4;2263
+"15008 Metropolitana III";4026;6089;11;10126
+"15009 Rio Caet?s";3162;3723;15;6900
+"15010 Tapaj?s";2161;2393;3;4557
+"15011 Tocantins";3627;6309;5;9941
+"15012 Xingu";2277;3733;2;6012
+"15013 Maraj? I";1597;800;12;2409
+"15014 Maraj? II";5121;1778;4;6903
+"25001 1? Regiao Mata Atl?ntica";8228;12349;8;20585
+"25002 2? Regiao";1190;1521;3;2714
+"25003 3? Regiao";148;105;NA;253
+"25004 4? Regiao";130;371;NA;501
+"25005 5? Regiao";255;963;NA;1218
+"25006 6? Regiao";1375;2604;NA;3979
+"25007 7? Regiao";195;981;1;1177
+"25008 8? Regiao";84;942;NA;1026
+"25009 9? Regiao";373;1170;NA;1543
+"25010 10? Regiao";5;1742;NA;1747
+"25011 11? Regiao";120;242;NA;362
+"25012 12? Regiao";388;354;1;743
+"25013 13? Regiao";47;390;NA;437
+"25014 14? Regiao";1410;458;NA;1868
+"25015 15? Regiao";348;728;1;1077
+"25016 16? Regiao";3531;8989;2;12522
+"26001 Afogados da Ingazeira";749;2004;NA;2753
+"26002 Arcoverde";2626;1563;2;4191
+"26003 Caruaru";6981;8289;11;15281
+"26004 Garanhuns";2250;2291;6;4547
+"26005 Goiana";597;486;3;1086
+"26006 Limoeiro";2509;3112;2;5623
+"26007 Ouricuri";1846;2837;NA;4683
+"26008 Palmares";2506;1621;6;4133
+"26009 Petrolina";4317;5665;1;9983
+"26010 Recife";28427;30917;79;59423
+"26011 Salgueiro";549;1951;8;2508
+"26012 Serra Talhada";592;2204;NA;2796
+"Ignorado NA PE";1;NA;NA;1
+"22001 Carnaubais";393;548;NA;941
+"22002 Chapada das Mangabeiras";1041;1496;NA;2537
+"22003 Cocais";1784;2433;1;4218
+"22004 Entre Rios";6904;12867;20;19791
+"22005 Plan?cie Litor?nea";2686;2491;NA;5177
+"22006 Serra da Capivara";498;1657;NA;2155
+"22007 Tabuleiros do Alto Parna?ba";226;446;NA;672
+"22008 Vale do Canind?";525;546;NA;1071
+"22009 Vale do Rio Guaribas";911;2347;NA;3258
+"22010 Vale do Sambito";134;535;NA;669
+"22011 Vale dos Rios Piau? e Itaueiras";1006;2192;NA;3198
+"22012 Chapada Vale do Rio Itaim";288;497;NA;785
+"41001 1? RS Paranagu?";1492;1911;7;3410
+"41002 2? RS Metropolitana";16283;25410;43;41736
+"41003 3? RS Ponta Grossa";2874;4990;18;7882
+"41004 4? RS Irati";905;1274;NA;2179
+"41005 5? RS Guarapuava";2476;3931;1;6408
+"41006 6? RS Uni?o da Vit?ria";760;1497;NA;2257
+"41007 7? RS Pato Branco";1780;2736;NA;4516
+"41008 8? RS Francisco Beltr?o";1110;3412;NA;4522
+"41009 9? RS Foz do Igua?u";2462;3720;7;6189
+"41010 10? RS Cascavel";3241;4831;NA;8072
+"41011 11? RS Campo Mour?o";618;3162;4;3784
+"41012 12? RS Umuarama";970;2866;NA;3836
+"41013 13? RS Cianorte";598;977;1;1576
+"41014 14? RS Paranava?";337;2591;NA;2928
+"41015 15? RS Maring?";2309;8596;NA;10905
+"41016 16? RS Apucarana";739;3213;NA;3952
+"41017 17? RS Londrina";4035;7390;5;11430
+"41018 18? RS Corn?lio Proc?pio";345;1846;13;2204
+"41019 19? RS Jacarezinho";1149;2362;5;3516
+"41020 20? RS Toledo";1709;3573;NA;5282
+"41021 21? RS Tel?maco Borba";661;1225;8;1894
+"41022 22? RS Ivaipor?";109;1456;3;1568
+"33001 Baia da Ilha Grande";1103;1823;6;2932
+"33002 Baixada Litor?nea";2900;6520;5;9425
+"33003 CentroNASul";1086;3266;8;4360
+"33004 M?dio Para?ba";2676;6643;NA;9319
+"33005 Metropolitana I";48422;56417;20;104859
+"33006 Metropolitana II";6312;13001;2;19315
+"33007 Noroeste";265;3455;5;3725
+"33008 Norte";3879;8072;8;11959
+"33009 Serrana";2979;7169;16;10164
+"Ignorado NA RJ";1;NA;NA;1
+"24001 1? Regiao de Sa?de NA S?o Jos? de Mipibu";1533;1568;3;3104
+"24002 2? Regiao de Sa?de NA Mossor?";1405;6087;2;7494
+"24003 3? Regiao de Sa?de NA Jo?o C?mara";1208;745;3;1956
+"24004 4? Regiao de Sa?de NA Caic?";508;1228;1;1737
+"24005 5? Regiao de Sa?de NA Santa Cruz";1260;1336;1;2597
+"24006 6? Regiao de Sa?de NA Pau dos Ferros";226;2454;2;2682
+"24007 7? Regiao de Sa?de NA Metropolitana";6654;13517;8;20179
+"24008 8? Regiao de Sa?de NA A?u";37;29;NA;66
+"11001 Vale do Jamari";898;2460;NA;3358
+"11002 Caf?";495;2439;3;2937
+"11003 Central";1004;3798;4;4806
+"11004 MadeiraNAMamor?";3598;4769;28;8395
+"11005 Zona da Mata";122;1496;NA;1618
+"11006 Cone Sul";844;1321;NA;2165
+"11007 Vale do Guapor?";111;432;NA;543
+"14001 Centro Norte";7590;4509;NA;12099
+"14002 Sul";517;440;1;958
+"43001 Regiao 01 NA Verdes Campos";2057;3073;NA;5130
+"43002 Regiao 02 NA Entre Rios";91;594;NA;685
+"43003 Regiao 03 NA Fronteira Oeste";1306;3620;NA;4926
+"43004 Regiao 04 NA Belas Praias";582;1175;NA;1757
+"43005 Regiao 05 NA Bons Ventos";1097;1398;NA;2495
+"43006 Regiao 06 NA Vale do Paranhana e Costa Serra";666;1678;7;2351
+"43007 Regiao 07 NA Vale dos Sinos";3016;5857;38;8911
+"43008 Regiao 08 NA Vale do Ca? e Metropolitana";2681;3414;8;6103
+"43009 Regiao 09 NA Carbon?fera/Costa Doce";875;1205;NA;2080
+"43010 Regiao 10 NA Capital e Vale do Gravata?";12987;14806;7;27800
+"43011 Regiao 11 NA Sete Povos das Miss?es";646;2529;1;3176
+"43012 Regiao 12 NA Portal das Miss?es";210;1013;1;1224
+"43013 Regiao 13 NA Diversidade";553;2225;1;2779
+"43014 Regiao 14 NA Fronteira Noroeste";349;2247;NA;2596
+"43015 Regiao 15 NA Caminho das ?guas";825;1833;1;2659
+"43016 Regiao 16 NA Alto Uruguai Ga?cho";779;1780;NA;2559
+"43017 Regiao 17 NA Planalto";1677;4372;NA;6049
+"43018 Regiao 18 NA Arauc?rias";326;1028;NA;1354
+"43019 Regiao 19 NA Botucara?";378;601;NA;979
+"43020 Regiao 20 NA Rota da Produ??o";338;1104;1;1443
+"43021 Regiao 21 NA Sul";3041;5075;33;8149
+"43022 Regiao 22 NA Pampa";457;1632;3;2092
+"43023 Regiao 23 NA Caxias e Hort?nsias";2148;5586;NA;7734
+"43024 Regiao 24 NA Campos de Cima da Serra";497;684;NA;1181
+"43025 Regiao 25 NA Vinhedos e Basalto";1131;2521;1;3653
+"43026 Regiao 26 NA Uva Vale";242;1043;2;1287
+"43027 Regiao 27 NA Jacu? Centro";550;1384;NA;1934
+"43028 Regiao 28 NA Vinte e Oito";896;2786;NA;3682
+"43029 Regiao 29 NA Vales e Montanhas";745;1839;1;2585
+"43030 Regiao 30 NA Vale da Luz";417;1130;2;1549
+"42001 Extremo Oeste";818;2065;NA;2883
+"42002 Oeste";2100;3949;NA;6049
+"42003 Xanxer?";764;1685;NA;2449
+"42004 Alto Vale do Itaja?";1910;2338;NA;4248
+"42005 Foz do Rio Itaja?";5450;4993;NA;10443
+"42006 M?dio Vale do Itaja?";4368;6232;4;10604
+"42007 Grande Florian?polis";8081;7409;9;15499
+"42008 Meio Oeste";839;1461;4;2304
+"42009 Alto Vale do Rio do Peixe";1375;2957;1;4333
+"42010 Alto Uruguai Catarinense";574;1539;2;2115
+"42011 Nordeste";4704;4936;NA;9640
+"42012 Planalto Norte";1529;3086;1;4616
+"42013 Serra Catarinense";1789;1958;1;3748
+"42014 Extremo Sul Catarinense";1039;1189;NA;2228
+"42015 Carbon?fera";2293;3890;NA;6183
+"42016 Laguna";1917;3139;NA;5056
+"42017 Vale do Itapoc?";1956;2106;NA;4062
+"Ignorado NA SC";1;NA;NA;1
+"28001 Aracaju";8333;9430;NA;17763
+"28002 Est?ncia";1699;809;NA;2508
+"28003 Itabaiana";1829;969;NA;2798
+"28004 Lagarto";1794;1361;1;3156
+"28005 Nossa Senhora da Gl?ria";1178;378;NA;1556
+"28006 Nossa Senhora do Socorro";628;328;1;957
+"28007 Propri?";824;585;4;1413
+"35011 Alto do Tiet?";16823;16688;6;33517
+"35012 Franco da Rocha";3143;2968;8;6119
+"35013 Mananciais";6437;4155;2;10594
+"35014 Rota dos Bandeirantes";11061;9502;3;20566
+"35015 Grande ABC";9794;15774;9;25577
+"35016 S?o Paulo";65201;80703;5;145909
+"35021 Central do DRS II";503;2616;NA;3119
+"35022 Lagos do DRS II";183;1422;NA;1605
+"35023 Cons?rcios do DRS II";524;2069;1;2594
+"35031 Central do DRS III";921;2531;NA;3452
+"35032 Cora??o do DRS III";1245;2849;NA;4094
+"35033 Noroeste do DRS III";472;2343;1;2816
+"35041 Baixada Santista";8938;10997;1;19936
+"35051 Norte NA Barretos";581;2602;NA;3183
+"35052 Sul NA Barretos";321;906;NA;1227
+"35061 Vale do Jurumirim";1090;2015;NA;3105
+"35062 Bauru";2358;4905;7;7270
+"35063 Polo Cuesta";1452;2215;NA;3667
+"35064 Ja?";646;2840;1;3487
+"35065 Lins";344;1318;NA;1662
+"35071 Bragan?a";1874;4627;1;6502
+"35072 Regiao Metropolitana de Campinas";11894;23333;3;35230
+"35073 Jundia?";3957;6926;1;10884
+"35074 Circuito das ?guas";313;1177;1;1491
+"35081 Tr?s Colinas";1791;3410;8;5209
+"35082 Alta Anhanguera";153;1407;NA;1560
+"35083 Alta Mogiana";95;990;NA;1085
+"35091 Adamantina";118;809;NA;927
+"35092 Assis";446;2127;NA;2573
+"35093 Mar?lia";1522;2819;NA;4341
+"35094 Ourinhos";773;1855;NA;2628
+"35095 Tup?";275;803;NA;1078
+"35101 Araras";1008;2355;2;3365
+"35102 Limeira";1245;2647;3;3895
+"35103 Piracicaba";2429;4416;1;6846
+"35104 Rio Claro";663;1985;1;2649
+"35111 Alta Paulista";98;989;NA;1087
+"35112 Alta Sorocabana";1435;4035;NA;5470
+"35113 Alto Capivari";105;298;NA;403
+"35114 Extremo Oeste Paulista";109;568;NA;677
+"35115 Pontal do Paranapanema";88;212;NA;300
+"35121 Vale do Ribeira";1609;1432;1;3042
+"35131 Horizonte Verde";1027;2727;1;3755
+"35132 Aqu?fero Guarani";4442;6970;1;11413
+"35133 Vale das Cachoeiras";147;769;NA;916
+"35141 Baixa Mogiana";767;2874;NA;3641
+"35142 Mantiqueira";369;2317;NA;2686
+"35143 Rio Pardo";445;1381;1;1827
+"35151 Catanduva";554;2408;NA;2962
+"35152 Santa F? do Sul";104;344;NA;448
+"35153 Jales";81;897;NA;978
+"35154 Fernand?polis";92;783;NA;875
+"35155 S?o Jos? do Rio Preto";2106;8261;NA;10367
+"35156 Jos? Bonif?cio";22;16;1;39
+"35157 Votuporanga";264;1816;NA;2080
+"35161 Itapetininga";2188;3105;NA;5293
+"35162 Itapeva";1501;2086;NA;3587
+"35163 Sorocaba";8678;12466;2;21146
+"35171 Alto Vale do Para?ba";4887;7763;NA;12650
+"35172 Circuito da F? e Vale Hist?rico";1009;3627;5;4641
+"35173 Litoral Norte";1733;2619;3;4355
+"35174 Vale do Para?ba/Regiao Serrana";2268;4777;1;7046
+"17001 M?dio Norte Araguaia";2608;3868;NA;6476
+"17002 Bico do Papagaio";1055;634;NA;1689
+"17003 Sudeste";408;488;NA;896
+"17004 Cerrado Tocantins Araguaia";301;729;NA;1030
+"17005 Ilha do Bananal";860;1528;NA;2388
+"17006 Capim Dourado";3200;4499;NA;7699
+"17007 Cant?o";607;720;NA;1327
+"17008 Amor Perfeito";621;805;NA;1426
+"Total";1023545;1511451;1285;2536281
+ Fonte: MS/SVSA/CGIAE NA Sistema de Informa??es sobre Nascidos Vivos NA SINASC
+ Notas:
+ 
+ Dados finais dispon?veis at? 2022 e preliminares referentes a 2023. Data da atualiza??o dos dados 08/2024.
+ Em 2011, houve uma mudan?a no conte?do da Declara??o de Nascidos Vivos, com maior detalhamento das informa??es coletadas. Para este ano, foram
+ utilizados simultaneamente os dois formul?rios. Para mais detalhes sobre as mudan?as ocorridas e os seus efeitos, veja o documento
+ "Consolida??o do Sistema de Informa??es sobre Nascidos Vivos NA 2011".
+ 
+ * A categoriza??o da "Adequa??o quantitativa de pr?NAnatal" mostrada na vari?vel "Adeq quant pr?NAnatal" considera o in?cio do
+ pr?NAnatal no primeiro trimestre e um m?nimo de seis consultas de pr?NAnatal ?, sendo gravada em campo chamado Kotelchuck no
+ arquivo dispon?vel para download, calculado a partir dos campos ?33 ? N?mero de consultas pr?NAnatal? (Mesprenat) e ?34 ? M?s de gesta??o em que iniciou o pr?NAnatal? (Consprenat).
+ Maiores informa??es no documento "Sa?de Brasil 2017: uma an?lise da situa??o de sa?de e os desafios para o alcance dos Objetivos de Desenvolvi
+ 
