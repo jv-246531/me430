@@ -30,3 +30,6 @@ cesareas <- read_delim("dados/g_robson_cesareas.csv",
 
 partos <- inner_join(nascimentos, cesareas, by = c("Estabelecimento", "grupo_de_Robson"))
 rm(nascimentos, cesareas)
+
+partos <- partos %>%
+  filter(grupo_de_Robson != "Branco/Ignorado")
