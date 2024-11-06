@@ -37,5 +37,8 @@ iteracoes <- 50000
 
 amostras_aas <- data.frame(amostra = amostrador_aas(iteracoes, tamanho_amostral)/tamanho_amostral)
 
-saveRDS(object = amostras_aas, file = "bancos/amostras_aas.rds")
+if (!file.exists("bancos/amostras_aas.rds")) {
+  saveRDS(object = amostras_aas, file = "bancos/amostras_aas.rds")
+}
+
 

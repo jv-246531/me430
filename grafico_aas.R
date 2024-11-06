@@ -13,6 +13,9 @@ quantidade_cesarias <- partos %>%
 p_real <- quantidade_cesarias/tamanho_populacional
 quantilestimado <- quantile(amostras_aas$amostra, probs = c(.025,.975))
 
+var_aas <- (tamanho_populacional-tamanho_amostral)*p_real*(1-p_real)/
+  ((tamanho_populacional-1)*tamanho_amostral)
+
 grafico <- ggplot(amostras_aas) +
   geom_histogram(aes(x = amostra, y = ..density.., fill = "Empírica"),
                  binwidth = 2/tamanho_amostral,
@@ -24,20 +27,22 @@ grafico <- ggplot(amostras_aas) +
                 alpha = .85,
                 args = list(mean = p_real,
                             sd = sqrt(
-                              (1-(tamanho_amostral/tamanho_populacional))*((amostra_aas*(1-amostra_aas))/(tamanho_amostral-1))
+                              var_aas
                             ))) +
   geom_vline(aes(xintercept = p_real, color = "Proporção de\ncesáreas\n(populacional)"),
              size = .71,
              alpha = .8) +
   geom_vline(aes(color = "Quantil 2.5%",
-                 xintercept = quantilestimado[1]),
+                 xintercept = p_real - qnorm(.975)*sqrt(var_aas)),
              size = .71,
              alpha = .8) +
   geom_vline(aes(color = "Quantil 97.5%",
-                 xintercept = quantilestimado[2]),
+                 xintercept = p_real + qnorm(.975)*sqrt(var_aas)),
              size = .71,
              alpha = .8) +
-  labs(title = "Distribuições empírica e assintótica para estimador da proporção de cesáreas na RMC",
+  labs(title = paste0("Distribuições empírica e assintótica ",
+                      "para estimador da proporção ",
+                      "de cesáreas na RMC\n(Utilizando AAS)"),
        x = "Proporção",
        y = "Densidade de probabilidade",
        color = NULL, fill = NULL) +
@@ -45,8 +50,11 @@ grafico <- ggplot(amostras_aas) +
   scale_color_manual(values = c("Assintótica" = "#6e4619",
                                 "Proporção de\ncesáreas\n(populacional)" = "#1e3e4e",
                                 "Quantil 2.5%" = "#d02020",
-                                "Quantil 97.5%" = "#d02020")) +
-  theme_minimal()
+                                "Quantil 97.5%" = "#802090")) +
+  scale_x_continuous(breaks = seq(0.610, 0.720, by = 0.010), 
+                     #labels = scales::number_format(accuracy = 0.001)
+                     )+
+  theme_classic()
 
 ggsave(filename = "graficos/distr_aas.png",
        plot = grafico,

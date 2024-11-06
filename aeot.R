@@ -1,4 +1,5 @@
-#source("leitura_dados.R")
+source("leitura_dados.R")
+source("aas.R")
 
 tamanho_amostral <- 1035
 
@@ -18,11 +19,15 @@ dados <- partos %>%
 
 sum(dados$tamanho)
 
-amostrador_aeot <- function(n_, tamanho_amostral) {
+constante_grupo9 <- dados$peso[10]
+
+amostrador_aeot <- function(n_, tamanho_amostral, total_estratos = FALSE) {
   
-  amostras <- numeric(n_)
+  amostras <- numeric(n_) + constante_grupo9
+  estratos <- numeric()
+  prop <- numeric(constante_grupo9)
   
-  for(i in c(1,3:9,2)) {
+  for(i in c(1,3:10,2)) {
     
     ces <- dados[i, "ces"] %>% pull()
     nasc <- dados[i, "nasc"] %>% pull()
@@ -33,9 +38,19 @@ amostrador_aeot <- function(n_, tamanho_amostral) {
                       m = ces,
                       n = nasc - ces,
                       k = tamanho)
-    amostras <- amostras + amostra*peso/tamanho
+    
+    estratos <- append(estratos, amostra)
+    prop <- append(prop, amostra/tamanho)
+    if(tamanho > 0) {
+      amostras <- amostras + amostra*peso/tamanho
+    }
   }
   
+  if (total_estratos) {
+    return(list(prop = amostras,
+                grupo = estratos,
+                prop_grupo = prop))
+  }
   return(amostras)
     
   }
@@ -43,6 +58,8 @@ amostrador_aeot <- function(n_, tamanho_amostral) {
 #######################
 
 set.seed(57)
+
+
 
 tamanho_amostral <- 1035
 tamanho_populacional <- partos %>%
@@ -52,15 +69,22 @@ quantidade_cesarias <- partos %>%
   summarise(ces = sum(Cesareas)) %>%
   pull
 
-p_real <- quantidade_cesarias/tamanho_populacional
 
-amostra_aas <- amostrador_aas(1, tamanho_amostral)/tamanho_amostral
+
+amostra_aeot <- amostrador_aeot(1, tamanho_amostral, total_estratos = TRUE)
 
 iteracoes <- 50000
 
 amostras_aeot <- data.frame(amostra = amostrador_aeot(iteracoes, tamanho_amostral))
 
-variancia <- sum((dados[-10,]$peso^2)*(1-(dados[-10,]$tamanho/dados[-10,]$nasc))*(dados[-10,]$sigma^2)/dados[-10,]$tamanho)
+var_aeot <- sum((dados[-10,]$nasc^2/(33964^2))*(dados[-10,]$nasc - dados[-10,]$tamanho)*dados[-10,]$sigma^2/(
+  (dados[-10,]$nasc-1)*dados[-10,]$tamanho
+  ))
+
+p_real <- quantidade_cesarias/tamanho_populacional
+
+
+
 
 grafico <- ggplot(amostras_aeot) +
   geom_histogram(aes(x = amostra, y = ..density.., fill = "Empírica"),
@@ -73,20 +97,22 @@ grafico <- ggplot(amostras_aeot) +
                 alpha = .85,
                 args = list(mean = p_real,
                             sd = sqrt(
-                              variancia
+                              var_aeot
                             ))) +
   geom_vline(aes(xintercept = p_real, color = "Proporção de\ncesáreas\n(populacional)"),
              size = .71,
              alpha = .8) +
   geom_vline(aes(color = "Quantil 2.5%",
-                 xintercept = quantilestimado[1]),
+                 xintercept = p_real - qnorm(.975)*sqrt(var_aeot)),
              size = .71,
              alpha = .8) +
   geom_vline(aes(color = "Quantil 97.5%",
-                 xintercept = quantilestimado[2]),
+                 xintercept = p_real + qnorm(.975)*sqrt(var_aeot)),
              size = .71,
              alpha = .8) +
-  labs(title = "Distribuições empírica e assintótica para estimador da proporção de cesáreas na RMC",
+  labs(title = paste0("Distribuições empírica e assintótica ",
+                      "para estimador da proporção ",
+                      "de cesáreas na RMC\n(Utilizando AEot)"),
        x = "Proporção",
        y = "Densidade de probabilidade",
        color = NULL, fill = NULL) +
@@ -94,8 +120,11 @@ grafico <- ggplot(amostras_aeot) +
   scale_color_manual(values = c("Assintótica" = "#6e4619",
                                 "Proporção de\ncesáreas\n(populacional)" = "#1e3e4e",
                                 "Quantil 2.5%" = "#d02020",
-                                "Quantil 97.5%" = "#d02020")) +
-  theme_minimal()
+                                "Quantil 97.5%" = "#802090")) +
+  scale_x_continuous(breaks = seq(0.610, 0.720, by = 0.010), 
+                     #labels = scales::number_format(accuracy = 0.001)
+                     ) +
+  theme_classic()
 
 ggsave(filename = "graficos/distr_aeot.png",
        plot = grafico,
