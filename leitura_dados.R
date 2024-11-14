@@ -1,5 +1,6 @@
-library(tidyverse)
+library(readr)
 library(dplyr)
+library(ggplot2)
 
 nascimentos <- read_delim("dados/g_robson_nascimentos.csv",
                      delim = ";",
