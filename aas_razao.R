@@ -49,7 +49,7 @@ analise_razao <- function(grupo) {
   
   r <- p/theta
   
-  sigma <- (cada_grupo[1]*(1-r)^2 + cada_grupo[2] + cada_grupo[3]*r^2)/tamanho
+  sigma <- (sum_y - 2*r*sum_xy + (r^2)*sum_x)/tamanho
   
   #print(
   #  paste(tamanho, sum_x, theta %>% round(4), sum_y, p %>% round(4), r %>% round(4), sigma %>% round(4), sep = " & ")
@@ -116,19 +116,19 @@ vies_aas_razao <- vies(r = analise_razao("geral")$r,
                       pop = tamanho_populacional,
                       p = analise_razao("geral")$p,
                       th = analise_razao("geral")$theta,
-                      interacao = parametros_amostra[3])
+                      interacao = analise_razao("geral")$sum_xy)
 
 #############
 
 iteracoes <- 50000
 
-amostras_aes_razao <- data.frame(amostra = amostrador_aas_razao(iteracoes, tamanho_amostral)$prop)
+amostras_aas_razao <- data.frame(amostra = amostrador_aas_razao(iteracoes, tamanho_amostral)$prop)
 
 
 p_real <- analise_razao("geral")$p
 
 
-grafico <- ggplot(amostras_aes_razao) +
+grafico <- ggplot(amostras_aas_razao) +
   geom_histogram(aes(x = amostra, y = ..density.., fill = "Empírica"),
                  binwidth = 2/tamanho_amostral,
                  color = "#68353c",
@@ -141,15 +141,15 @@ grafico <- ggplot(amostras_aes_razao) +
                             sd = sqrt(
                               var_aas_razao
                             ))) +
-  geom_vline(aes(xintercept = p_real, color = "Proporção de\ncesáreas\n(populacional)"),
+  geom_vline(aes(xintercept = p_real + vies_aas_razao, color = "Proporção de\ncesáreas\n(populacional) + viés"),
              size = .71,
              alpha = .8) +
   geom_vline(aes(color = "Quantil 2.5%",
-                 xintercept = p_real - qnorm(.975)*sqrt(var_aas_razao)),
+                 xintercept = p_real + vies_aas_razao - qnorm(.975)*sqrt(var_aas_razao)),
              size = .71,
              alpha = .8) +
   geom_vline(aes(color = "Quantil 97.5%",
-                 xintercept = p_real + qnorm(.975)*sqrt(var_aas_razao)),
+                 xintercept = p_real + vies_aas_razao + qnorm(.975)*sqrt(var_aas_razao)),
              size = .71,
              alpha = .8) +
   labs(title = paste0("Distribuições empírica e assintótica ",
@@ -160,7 +160,7 @@ grafico <- ggplot(amostras_aes_razao) +
        color = NULL, fill = NULL) +
   scale_fill_manual(values = c("Empírica" = "#e8e51c")) +
   scale_color_manual(values = c("Assintótica" = "#6e4619",
-                                "Proporção de\ncesáreas\n(populacional)" = "#1e3e4e",
+                                "Proporção de\ncesáreas\n(populacional) + viés" = "#1e3e4e",
                                 "Quantil 2.5%" = "#d02020",
                                 "Quantil 97.5%" = "#802090")) +
   scale_x_continuous(breaks = seq(0.610, 0.720, by = 0.010), 

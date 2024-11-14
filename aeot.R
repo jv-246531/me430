@@ -77,7 +77,7 @@ iteracoes <- 50000
 
 amostras_aeot <- data.frame(amostra = amostrador_aeot(iteracoes, tamanho_amostral))
 
-var_aeot <- sum((dados[-10,]$nasc^2/(33964^2))*(dados[-10,]$nasc - dados[-10,]$tamanho)*dados[-10,]$sigma^2/(
+var_aeot <- sum((dados[-10,]$nasc^2/(tamanho_populacional^2))*(dados[-10,]$nasc - dados[-10,]$tamanho)*dados[-10,]$sigma^2/(
   (dados[-10,]$nasc-1)*dados[-10,]$tamanho
   ))
 
@@ -88,7 +88,7 @@ p_real <- quantidade_cesarias/tamanho_populacional
 
 grafico <- ggplot(amostras_aeot) +
   geom_histogram(aes(x = amostra, y = ..density.., fill = "Empírica"),
-                 binwidth = 2/tamanho_amostral,
+                 binwidth = 3/tamanho_amostral,
                  color = "#68353c",
                  alpha = .65) +
   stat_function(aes(color = "Assintótica"),

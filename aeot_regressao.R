@@ -6,6 +6,24 @@ tamanho_populacional <- partos %>%
   summarise(nasc = sum(Nascimentos)) %>%
   pull
 
+tamanho_por_estrato <- numeric()
+
+for (grupo in c("grupo_1", "grupo_2", "grupo_3", "grupo_4", "grupo_5",
+                "grupo_6", "grupo_7", "grupo_8", "grupo_10" )) {
+  
+  tamanho_por_estrato <- append(tamanho_por_estrato,
+                                sqrt(analise_regressao(grupo)$tamanho*analise_regressao(grupo)$sigma_y2*
+                                  (1 - ((analise_regressao(grupo)$sigma_xy)^2)/
+                                     (analise_regressao(grupo)$sigma_y2*analise_regressao(grupo)$sigma_x2)))
+  )
+}
+
+tamanho_por_estrato <- (tamanho_por_estrato*tamanho_amostral/sum(tamanho_por_estrato)) %>%
+  round()
+
+tamanho_por_estrato[10] <- tamanho_por_estrato[9]
+tamanho_por_estrato[9] <- 0
+
 dados <- partos %>%
   group_by(grupo_de_Robson) %>%
   summarise(nasc = sum(Nascimentos),
@@ -13,7 +31,7 @@ dados <- partos %>%
   mutate(prop = ces/nasc) %>%
   mutate(sigma = sqrt(prop*(1-prop))) %>%
   mutate(nasc_sigma = nasc*sigma) %>%
-  mutate(tamanho = round((tamanho_amostral*nasc_sigma/sum(nasc_sigma))-.0185)) %>%
+  mutate(tamanho = tamanho_por_estrato[c(1,10,2:9)]) %>%
   mutate(peso = nasc/tamanho_populacional) 
 
 dados_por_estabelecimento <- partos %>%
@@ -33,6 +51,7 @@ amostrador_aeot_regressao <- function(n_) {
   many_p <- numeric()
   many_p_reg <- numeric()
   many_b <- numeric()
+  many_p_reg_b_est <- numeric()
   
   for (grupo in c("grupo_1", "grupo_2", "grupo_3", "grupo_4", "grupo_5",
                   "grupo_6", "grupo_7", "grupo_8", "grupo_9", "grupo_10" )) {
@@ -63,17 +82,24 @@ amostrador_aeot_regressao <- function(n_) {
     
     b_estimado <- (amostras[,1] - p*sum_x -theta*sum_y + tamanho_estrato*p*theta)/(sum_x - 2*sum_x*theta + tamanho_estrato*theta^2)
     
+    p_reg_b_est <- p + b_estimado*(analise_regressao(grupo)$theta - theta)
+    
     sums_x <- cbind(sums_x, sum_x)
     sums_y <- cbind(sums_y, sum_y)
     thetas <- cbind(thetas, theta)
     many_p <- cbind(many_p, p)
     many_p_reg <- cbind(many_p_reg, p_reg)
     many_b <- cbind(many_b, b_estimado)
+    many_p_reg_b_est <- cbind(many_p_reg_b_est, p_reg_b_est)
   }
   
   pesos <-dados$peso[c(1,3:10,2)]
   
   final_p <- apply(many_p_reg, 1, function(x) {
+    sum(pesos * x, na.rm = TRUE)
+  }) + pesos[9]
+  
+  final_p_b_est <- apply(many_p_reg_b_est, 1, function(x) {
     sum(pesos * x, na.rm = TRUE)
   }) + pesos[9]
   
@@ -83,7 +109,9 @@ amostrador_aeot_regressao <- function(n_) {
               many_p = many_p,
               many_p_reg = many_p_reg,
               many_b = many_b,
-              final_p = final_p))
+              many_p_reg_b_est = many_p_reg_b_est,
+              final_p = final_p,
+              final_p = final_p_b_est))
 }
 
 #############
@@ -146,8 +174,8 @@ grafico <- ggplot(amostras_aeot_regressao) +
   scale_fill_manual(values = c("Empírica" = "#e8e51c")) +
   scale_color_manual(values = c("Assintótica" = "#6e4619",
                                 "Proporção de\ncesáreas\n(populacional)" = "#1e3e4e",
-                                "Quantil 2.5% (assintótico)" = "#d02020",
-                                "Quantil 97.5% (assintótico)" = "#802090")) +
+                                "Quantil 2.5%" = "#d02020",
+                                "Quantil 97.5%" = "#802090")) +
   scale_x_continuous(breaks = seq(0.61, 0.72, by = 0.01),
                      #labels = scales::number_format(accuracy = 0.001)
   ) +

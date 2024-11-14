@@ -86,13 +86,16 @@ amostrador_aas_regressao <- function(n_, tamanho_amostra) {
   
   b_estimado <- (ambos - p*sum_x -theta*sum_y + tamanho_amostra*p*theta)/(sum_x - 2*sum_x*theta + tamanho_amostra*theta^2)
   
+  p_reg_b_est <- p + b_estimado*(theta_total - theta)
+  
   return(list(sum_x = sum_x,
               sum_y = sum_y,
               interação = ambos,
               theta = theta,
               p = p,
               p_reg = p_reg,
-              b_estimado = b_estimado))
+              b_estimado = b_estimado,
+              p_reg_b_est = p_reg_b_est))
 }
 
 #############
@@ -112,7 +115,7 @@ var_aas_regressao <- (1-(tamanho_amostral/tamanho_populacional))*((tamanho_popul
 
 iteracoes <- 50000
 
-amostras_aas_regressao <- data.frame(amostra = amostrador_aas_regressao(iteracoes, tamanho_amostral)$p_reg)
+amostras_aas_regressao <- data.frame(amostra = amostrador_aas_regressao(iteracoes, tamanho_amostral)$p_reg_b_est)
 
 
 grafico <- ggplot(amostras_aas_regressao) +
